@@ -5,9 +5,7 @@ import { ReactNode } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import "./globals.css"; // Import global styles
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import Button from "@mui/material";
+
 interface LayoutProps {
   children: ReactNode;
 }

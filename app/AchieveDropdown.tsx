@@ -7,12 +7,7 @@ import React, { useState } from "react";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 
-interface DropdownProps {
-  title: string; // Title should be a string
-  items: string[]; // Items should be an array of strings
-}
-
-const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
+const Dropdown = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {

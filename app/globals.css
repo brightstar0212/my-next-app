@@ -307,29 +307,6 @@ ul {
   padding: 5px;
 }
 
-@media (max-width: 1200px) {
-  #lead-content h1 {
-    font-size: 3.5rem;
-  }
-
-  #lead-content h2 {
-    font-size: 2rem;
-  }
-
-  #lead-content p {
-    font-size: 1.25em;
-  }
-
-  #lead-image {
-    width: 350px;
-    height: 350px;
-  }
-
-  .lead-overlay {
-    clip-path: polygon(0 0%, 100% 0, 100% 0%, 0 160%);
-  }
-}
-
 @media (max-width: 768px) {
   #lead-content h1 {
     font-size: 3rem;

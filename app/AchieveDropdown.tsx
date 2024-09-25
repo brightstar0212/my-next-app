@@ -6,7 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Typography } from "@mui/material";
 import Image from "next/image";
-const Dropdown = ({ title, items }) => {
+
+interface DropdownProps {
+  title: string; // Title should be a string
+  items: string[]; // Items should be an array of strings
+}
+
+const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {

@@ -1,6 +1,6 @@
 "use client"; // Mark this component as a Client Component
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { Button, Typography } from "@mui/material";
 import Image from "next/image";

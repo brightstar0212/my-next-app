@@ -1,18 +1,14 @@
 "use client"; // Mark this component as a Client Component
 
 import React, { useState, useEffect } from "react";
-import { Slide, Box, Button, Typography } from "@mui/material";
-import Image from "next/image";
+import { Button, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronUp,
   faChevronDown,
-  faChevronLeft,
-  faChevronRight,
   faEnvelope,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
 export default function Contact() {

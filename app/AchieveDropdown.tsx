@@ -6,8 +6,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Typography } from "@mui/material";
 import Image from "next/image";
+interface Item {
+  contentTitle: string;
+  contentText: string;
+  imgsrc: string;
+  imgWidth: number | string; // Can be a number or string
+  imgHeight: number | string; // Can be a number or string
+  imgname: string;
+}
+interface DropdownProps {
+  title: string;
+  items: Item[]; // Adjust the type if items is not an array of strings
+}
 
-const Dropdown = ({ title, items }) => {
+const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -90,8 +102,16 @@ const Dropdown = ({ title, items }) => {
                     {item.imgsrc.length > 0 && (
                       <Image
                         src={item.imgsrc}
-                        width={item.imgWidth}
-                        height={item.imgHeight}
+                        width={
+                          typeof item.imgWidth === "string"
+                            ? parseInt(item.imgWidth, 10)
+                            : item.imgWidth
+                        }
+                        height={
+                          typeof item.imgHeight === "string"
+                            ? parseInt(item.imgHeight, 10)
+                            : item.imgHeight
+                        }
                         alt={item.contentTitle}
                         style={{
                           margin: "auto",
@@ -121,7 +141,7 @@ const Dropdown = ({ title, items }) => {
           </ul>
 
           {items.map(
-            (item, index) =>
+            (item) =>
               item.contentTitle.length == 0 && (
                 <>
                   <Typography

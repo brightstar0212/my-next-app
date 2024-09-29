@@ -17,7 +17,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <AppBar
           position="fixed"
           sx={{ backgroundColor: "#fff", color: "#000", padding: 0 }}
-          className="animate-fade-down"
+          className="animate-fade-down myNavbar"
         >
           <Toolbar>
             <Navigation />

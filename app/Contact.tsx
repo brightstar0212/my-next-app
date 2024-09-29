@@ -10,7 +10,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import "aos/dist/aos.css"; // Import AOS styles
-
+import Image from "next/image";
 export default function Contact() {
   const [showGoToTop, setShowGoToTop] = useState(false);
   const handleScroll = () => {
@@ -64,7 +64,12 @@ export default function Contact() {
           data-aos="flip-right"
           onClick={toggleDown}
         >
-          <img src="https://www.ronan-murphy.com/Images/address-book.svg" />
+          <Image
+            width={150}
+            height={300}
+            src="https://www.ronan-murphy.com/Images/address-book.svg"
+            alt="contact"
+          />
           <FontAwesomeIcon
             icon={isDropOpen ? faChevronUp : faChevronDown}
             style={{ color: "white", width: "30px", height: "30px" }}
@@ -105,7 +110,7 @@ export default function Contact() {
       <div style={{ marginTop: "2rem" }} className="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76329.91282327415!2d-9.131146795980367!3d53.28398573503283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b93955a2d5bff%3A0x32b1b440a495281!2sGalway%2C%20Ireland!5e0!3m2!1sen!2s!4v1727214061128!5m2!1sen!2s"
-          width="1200"
+          width="90%"
           height="400"
           style={{ borderRadius: "15px", margin: "auto" }}
           loading="lazy"

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Typography } from "@mui/material";
-
+import Image from "next/legacy/image";
 export default function Skill() {
   return (
     <>
@@ -44,76 +44,101 @@ export default function Skill() {
           <div className="w-1/2 skill-content">
             <ul className="block">
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
+                  layout="responsive"
                   src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg"
                   alt="tensoflow"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg"
                   alt="opencv"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg"
                   alt="pytorch"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg"
                   alt="spark"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="	https://www.ronan-murphy.com/Images/Projects/scikit-learn.svg"
                   alt="scikit"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="	https://www.ronan-murphy.com/Images/Projects/caffe.svg"
                   alt="caffe"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/apache_activemq/apache_activemq-ar21.svg"
                   alt="activeMQ"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-ar21.svg"
                   alt="hadoop"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg"
                   alt="amazon"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg"
                   alt="microsoftAzure"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg"
                   alt="googleCloud"
-                ></img>
+                ></Image>
               </li>
               <li>
-                <img
+                <Image
+                  width={150}
+                  height={100}
                   src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg"
                   alt="jupyter"
-                ></img>
+                ></Image>
               </li>
             </ul>
           </div>
@@ -188,9 +213,10 @@ export default function Skill() {
                 <strong>Front-end Development</strong> with HTML, CSS,
                 Javascript and JQuery to implement client-side projects. UX and
                 UI enhancements with Bootstrap and FontAwesome styles. In my
-                previous role, analysed NUI Galway's website to add features and
-                conform with <strong>European Accessibility</strong> guidelines.
-                This website was programmed from scratch using these skills.
+                previous role, analysed NUI Galway&#39;s website to add features
+                and conform with <strong>European Accessibility</strong>{" "}
+                guidelines. This website was programmed from scratch using these
+                skills.
                 <br />
                 <br />
                 <br />
@@ -215,118 +241,156 @@ export default function Skill() {
             <div className="w-1/2 skill-content">
               <ul className="block">
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"
                     alt="python"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/java/java-ar21.svg"
                     alt="java"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg"
                     alt="Rpro"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.ronan-murphy.com/Images/Projects/c++.svg"
                     alt="c++"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="	https://www.ronan-murphy.com/Images/Projects/c.svg"
                     alt="c"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="	https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
                     alt="html5"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg"
                     alt="javascript"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/jquery/jquery-ar21.svg"
                     alt="jquery"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg"
                     alt="mysql"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
                     alt="mongodb"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/android/android-ar21.svg"
                     alt="android"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"
                     alt="css"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"
                     alt="bootstrap"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg"
                     alt="linux"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg"
                     alt="bash"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/arduino/arduino-ar21.svg"
                     alt="arduino"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg"
                     alt="vs"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/w3c_xml/w3c_xml-ar21.svg"
                     alt="xml"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/mit_scratch/mit_scratch-ar21.svg"
                     alt="scratch"
-                  ></img>
+                  ></Image>
                 </li>
               </ul>
             </div>
@@ -353,82 +417,108 @@ export default function Skill() {
             <div className="w-1/2 skill-content">
               <ul className="block">
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"
                     alt="python"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/github/github-ar21.svg"
                     alt="java"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/shippable/shippable-ar21.svg"
                     alt="Rpro"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/gradle/gradle-ar21.svg"
                     alt="c++"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="	https://www.vectorlogo.zone/logos/google_analytics/google_analytics-ar21.svg"
                     alt="c"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="	https://www.ronan-murphy.com/Images/Projects/venism.svg"
                     alt="html5"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.ronan-murphy.com/Images/Projects/AutoCad_logo.svg"
                     alt="javascript"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-ar21.svg"
                     alt="jquery"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/unity3d/unity3d-ar21.svg"
                     alt="mysql"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/canva/canva-ar21.svg"
                     alt="mongodb"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/gimp/gimp-ar21.svg"
                     alt="android"
-                  ></img>
+                  ></Image>
                 </li>
                 <li>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/wordpress/wordpress-ar21.svg"
                     alt="css"
-                  ></img>
+                  ></Image>
                 </li>
                 <li style={{ marginLeft: "35%" }}>
-                  <img
+                  <Image
+                    width={150}
+                    height={100}
                     src="https://www.vectorlogo.zone/logos/wireshark/wireshark-ar21.svg"
                     alt="bootstrap"
-                  ></img>
+                  ></Image>
                 </li>
               </ul>
             </div>

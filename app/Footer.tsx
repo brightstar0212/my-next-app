@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Typography } from "@mui/material";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 export default function Footer() {

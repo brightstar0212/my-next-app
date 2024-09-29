@@ -3,25 +3,22 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Button, Typography } from "@mui/material";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Dropdown from "./AchieveDropdown";
 import Skill from "./Skills";
-import Carousel from "./Carousel";
+import About from "./About";
 import Contact from "./Contact";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import {
-  faHashtag,
-  faGlobeOceania,
-  faHeartbeat,
-  faMusic,
   faSuitcase,
   faGraduationCap,
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import LeadSection from "./LeadSection";
 
 // HomePage Component
 export default function HomePage() {
@@ -210,8 +207,8 @@ export default function HomePage() {
           contentText:
             "After receiving a scholarship from undergraduate results I decided to pursue a full-time taught Masters in Artificial Intelligence. The course was divided into trimesters, each worth 33% of the overall degree. The first and second trimesters consisted primarily of modules, containing assignments, projects and final exams, with 6 modules in each. The third trimester consisted of a research project. The topic I chose was 'Knowledge Graph Embeddings to implement Explainable AI'.I received a First-Class Honours Degree.",
           imgname: "Master's Thesis",
-          imgWidth: "200",
-          imgHeight: "300",
+          imgWidth: 200,
+          imgHeight: 300,
         },
         {
           contentTitle: "B.E. in Electric and Computing",
@@ -219,8 +216,8 @@ export default function HomePage() {
           contentText:
             "I chose to study undenominated engineering as my undergraduate degree at NUIG. This four year program allows you to choose the discipline of engineering after the first year. I chose the Electronic and Computing discipline which involved an 8-month internship where I worked at SAP Galway.I chose modules in the software stream and became interested in AI. For my final year project, I created a football heading platform which measured the forces of an event and analysed them using machine learning.I received a First-Class Honours Degree.",
           imgname: "Engineering Graduation",
-          imgWidth: "400",
-          imgHeight: "250",
+          imgWidth: 400,
+          imgHeight: 250,
         },
         {
           contentTitle: "A.A. in French",
@@ -228,8 +225,8 @@ export default function HomePage() {
           contentText:
             "As my undergraduate degree didn't contain any continuation of foreign language studies I decided to pursue a part-time diploma during my first two years. This involved weekly classes, assignments, and end of semester exams.From undergoing this diploma I graduated with a fluency in French, equivalent to CEFR C1.I received an Upper Second-Class Honours Degree.",
           imgname: "French Diploma Graduation",
-          imgWidth: "400",
-          imgHeight: "250",
+          imgWidth: 400,
+          imgHeight: 250,
         },
       ],
     },
@@ -269,8 +266,8 @@ export default function HomePage() {
           contentText:
             "I was shortlisted for the Design and Communication Graphics Student Assignment award due to my distinguished leaving certificate project.Received a certificate of excellence for achieving 158 of 160 marks for my ‘Flower Torch’ project.",
           imgname: "D.C.G Project Award",
-          imgWidth: "250",
-          imgHeight: "350",
+          imgWidth: 250,
+          imgHeight: 350,
         },
       ],
     },
@@ -346,8 +343,8 @@ export default function HomePage() {
           contentText:
             "Irish Celtic Nation’s team player, which competed in tournaments in Edinburgh 2018 and Cardiff 2019.A former member of U17 Irish team which won gold at Inter-Regionals in Manchester (pictured on right), Bronze in Copenhagen at the ‘North-Sea Cup’ and played at European championships in Malta 2015.",
           imgname: "Inter-Regional Champions",
-          imgWidth: "400",
-          imgHeight: "250",
+          imgWidth: 400,
+          imgHeight: 250,
         },
         {
           contentTitle: "Senior Career",
@@ -355,22 +352,24 @@ export default function HomePage() {
           contentText:
             "A key member of Corrib Waterpolo and play on the senior team. For the first time in the club's 40-year history, we were crowned Senior All-Ireland Champions in April 2018.We were runners-up in the Irish National 1st League in 2020. Also winning the 2nd and 3rd divisions in 2016 and 2014.",
           imgname: "Irish Senior Cup Champions",
-          imgWidth: "400",
-          imgHeight: "250",
+          imgWidth: 400,
+          imgHeight: 250,
         },
         {
           contentTitle: "Underage Career",
-          imgsrc: "/assets/u_19 (1).jpg",
+          imgsrc: "/assets/u_19.jpg",
           contentText:
             "Captained underage Waterpolo teams to 4 national championships. Returned the U19 cup to Corrib after a 10-year lapse. Also winning the U17, U15 and U14 cups.",
           imgname: "U19 National Winners",
-          imgWidth: "400",
-          imgHeight: "250",
+          imgWidth: 400,
+          imgHeight: 250,
         },
       ],
     },
   ];
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  type DropdownType = "ai" | "analytics" | "other" | null;
+
+  const [activeDropdown, setActiveDropdown] = useState<DropdownType>(null);
 
   const handleDropdownToggle = () => {
     setActiveDropdown(activeDropdown === "ai" ? null : "ai");
@@ -386,205 +385,10 @@ export default function HomePage() {
   return (
     <div>
       {/* Lead Section */}
-      <section id="lead">
-        <div className="lead-contain">
-          <div>
-            <div id="lead-content">
-              <Typography
-                variant="h1"
-                component="h1"
-                style={{
-                  fontWeight: "900",
-                  fontSize: "4rem",
-                  lineHeight: "0.9em",
-                  paddingBottom: "10px",
-                }}
-              >
-                Ronan Murphy
-              </Typography>
-              <Typography
-                variant="h2"
-                component="h2"
-                style={{
-                  color: "#a0cfee",
-                  fontWeight: "500",
-                  fontSize: "2.25em",
-                }}
-              >
-                Artificial Intelligence Engineer
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{ fontWeight: "400", fontSize: "1.5em" }}
-              >
-                Welcome to the future
-              </Typography>
-            </div>
-          </div>
-
-          <div
-            id="lead-image"
-            style={{ position: "relative", width: "400px", height: "400px" }}
-          >
-            <Image
-              src="/assets/profiler_2.jpg"
-              alt="my profile pic"
-              layout="fill"
-              objectFit="cover"
-              style={{
-                verticalAlign: "bottom",
-              }}
-            />
-          </div>
-        </div>
-
-        <div
-          className="lead-overlay"
-          style={{
-            position: "absolute",
-
-            top: "0",
-            right: "0",
-            bottom: "0",
-            left: "0",
-            zIndex: 1,
-            backgroundImage: "linear-gradient(0deg, #888bf4, #5151c6)",
-            clipPath: "polygon(0 0%, 100% 0, 100% 0%, 0 170%)",
-          }}
-        ></div>
-      </section>
+      <LeadSection />
 
       {/* About Section */}
-      <section
-        id="about"
-        style={{ padding: "100px 0", scrollMarginTop: "64px" }}
-      >
-        <Typography
-          variant="h1"
-          component="h1"
-          style={{
-            color: "#5151c6",
-            fontWeight: "600",
-            fontSize: "2.8rem",
-            fontFamily: "MV Boli",
-            lineHeight: "0.9em",
-            paddingBottom: "10px",
-            paddingLeft: "50px",
-            textDecoration: "underline",
-          }}
-        >
-          About Me
-        </Typography>
-        <div className="about-content">
-          <div className="first-col">
-            <div className="content-images">
-              <Carousel />
-            </div>
-          </div>
-
-          <div className="content-text">
-            <p style={{ paddingRight: "3rem", paddingBottom: "1rem" }}>
-              Hi There! I'm Ronan, welcome to my website 😃 I'm a fullstack
-              software engineer specializing in Artificial Intelligence with 2+
-              years of experience. I am from Galway, Ireland 📍 Currently, I am
-              working with a Galway Start-up ByoWave where we make customizable
-              gaming controllers for all users. After my Masters, I worked for 6
-              months as a research assistant at NUI Galway 🏊
-            </p>
-            <div className="row">
-              <div className="column">
-                <Typography
-                  variant="h1"
-                  component="h1"
-                  style={{
-                    color: "#888bf4",
-                    fontWeight: "400",
-                    fontSize: "2rem",
-                    fontFamily: "Calibri Light",
-                    lineHeight: "0.9em",
-                    paddingBottom: "10px",
-                    display: "flex",
-                  }}
-                >
-                  <FontAwesomeIcon icon={faHashtag} /> Coding
-                </Typography>
-                <p>
-                  Passionate about technology and love working on AI-related
-                  projects in my spare time.
-                </p>
-              </div>
-              <div className="column">
-                <Typography
-                  variant="h1"
-                  component="h1"
-                  style={{
-                    color: "#888bf4",
-                    fontWeight: "400",
-                    fontSize: "2rem",
-                    fontFamily: "Calibri Light",
-                    lineHeight: "0.9em",
-                    paddingBottom: "10px",
-                    display: "flex",
-                  }}
-                >
-                  <FontAwesomeIcon icon={faGlobeOceania} /> Travelling
-                </Typography>
-                <p>
-                  Fascination with exploring the world. I've travelled around
-                  Europe, USA and Canada. Eager for my next trip once Covid
-                  passes!
-                </p>
-              </div>
-              <div className="column">
-                <Typography
-                  variant="h1"
-                  component="h1"
-                  style={{
-                    color: "#888bf4",
-                    fontWeight: "400",
-                    fontSize: "2rem",
-                    fontFamily: "Calibri Light",
-                    lineHeight: "0.9em",
-                    paddingBottom: "10px",
-                    display: "flex",
-                  }}
-                >
-                  <FontAwesomeIcon icon={faHeartbeat} /> Sports
-                </Typography>
-                <p>
-                  Play Waterpolo competitively for Corrib Galway. Former Irish
-                  player for university and underage teams. Ambition to make
-                  senior Irish team. Also enjoy playing Golf, Skiing, Gaelic
-                  Football and Soccer.
-                </p>
-              </div>
-              <div className="column">
-                <Typography
-                  variant="h1"
-                  component="h1"
-                  style={{
-                    color: "#888bf4",
-                    fontWeight: "400",
-                    fontSize: "2rem",
-                    fontFamily: "Calibri Light",
-                    lineHeight: "0.9em",
-                    paddingBottom: "10px",
-                    display: "flex",
-                  }}
-                >
-                  <FontAwesomeIcon icon={faMusic} /> Music
-                </Typography>
-                <p>
-                  Proficient at Guitar, Trumpet, Bass Guitar, Piano, Ukulele and
-                  Harmonica. A former member of Galway Jazz Orchestra and AOI
-                  rock band in which we performed many live shows around
-                  Ireland!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <About />
 
       {/* Experience Section */}
       <section
@@ -829,7 +633,12 @@ export default function HomePage() {
             data-aos="fade-right"
             onClick={handleDropdownToggle}
           >
-            <img src="assets/AI.svg" alt="AI project" />
+            <Image
+              src="/assets/AI.svg"
+              width={450}
+              height={450}
+              alt="AI project"
+            />
             <Typography
               variant="h3"
               component="h3"
@@ -869,7 +678,12 @@ export default function HomePage() {
             data-aos="fade"
             onClick={handleDropdownToggle2}
           >
-            <img src="assets/graph.svg" alt="AI project" />
+            <Image
+              src="/assets/graph.svg"
+              width={450}
+              height={450}
+              alt="AI project"
+            />
             <Typography
               variant="h3"
               component="h3"
@@ -911,7 +725,12 @@ export default function HomePage() {
             data-aos="fade-left"
             onClick={handleDropdownToggle3}
           >
-            <img src="assets/optimization.svg" alt="AI project" />
+            <Image
+              src="/assets/optimization.svg"
+              width={450}
+              height={450}
+              alt="AI project"
+            />
             <Typography
               variant="h3"
               component="h3"

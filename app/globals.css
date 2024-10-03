@@ -29,17 +29,30 @@ body {
 section {
   color: black;
 }
-.myNavbar {
-  width: 70%;
-  margin: auto;
+header {
+  position: fixed;
+  top: 0;
   left: 0;
-  margin-top: 1rem;
+  right: 0;
+  text-align: center;
+  z-index: 110;
+  animation-name: dropHeader;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 0.75s;
+  padding-top: 20px;
+}
+.myNavbar {
+  margin: auto;
   border-radius: 5px;
   background-color: #ffffff;
   color: black;
+  width: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-.MuiToolbar-root {
-  justify-content: space-between;
+.nav-items button {
+  font-family: Calibri Light;
+  font-size: 18px;
 }
 #lead {
   position: relative;
@@ -718,5 +731,15 @@ ul {
   }
   #menuItemBar {
     visibility: visible;
+  }
+}
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-100%); /* Start the header off-screen */
+  }
+  100% {
+    transform: translateY(
+      0
+    ); /* End the animation with the header in its normal position */
   }
 }

@@ -506,8 +506,14 @@ ul {
   .myNavbar {
     width: 80%;
   }
+  .menulist {
+    visibility: hidden;
+  }
 }
 @media (max-width: 768px) {
+  .menulist {
+    visibility: visible;
+  }
   .myNavbar {
     margin-right: 2rem;
     height: 40px;

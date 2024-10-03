@@ -78,10 +78,10 @@ ol li:hover {
   color: white;
 }
 #menuItemBar {
-  visibility: hidden;
+  visibility: hidden !important;
 }
 .menulists {
-  visibility: hidden;
+  visibility: hidden !important;
 }
 .lead-contain {
   display: grid;
@@ -512,7 +512,7 @@ ul {
 }
 @media (max-width: 768px) {
   .menulist {
-    visibility: visible;
+    visibility: visible !important;
   }
   .myNavbar {
     margin-right: 2rem;
@@ -606,7 +606,7 @@ ul {
     margin-bottom: 5px;
   }
   .myMenuItems {
-    display: none;
+    display: none !important;
   }
   .myNavbar {
     width: 40px;
@@ -616,7 +616,7 @@ ul {
     border-radius: 5px;
   }
   #menuItemBar {
-    visibility: visible;
+    visibility: visible !important;
   }
   #menuItemBar {
     padding: 0;

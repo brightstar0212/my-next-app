@@ -418,6 +418,9 @@ ul {
   #lead-content {
     top: 250px;
   }
+  .myNavbar {
+    width: 60%;
+  }
 }
 @media (max-width: 1024px) {
   .lead-contain {
@@ -485,8 +488,18 @@ ul {
   .content-images {
     width: 100%;
   }
+  .myNavbar {
+    width: 80%;
+  }
 }
 @media (max-width: 768px) {
+  .myNavbar {
+    margin-right: 2rem;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -575,7 +588,7 @@ ul {
     display: none;
   }
   .myNavbar {
-    width: 70px;
+    width: 40px;
     background-color: white;
     left: 1rem;
     top: 1rem;
@@ -584,14 +597,23 @@ ul {
   #menuItemBar {
     visibility: visible;
   }
+  #menuItemBar {
+    padding: 0;
+  }
 }
 @media (max-width: 600px) {
   .myNavbar {
-    width: 60px;
+    width: 40px;
     background-color: white;
     left: 1rem;
     top: 1rem;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  #menuItemBar {
+    padding: 0;
   }
   .footer a {
     font-size: 3rem;

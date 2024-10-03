@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AppBar, Toolbar } from "@mui/material";
 import { ReactNode } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";

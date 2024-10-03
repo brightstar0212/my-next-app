@@ -80,6 +80,10 @@ ol li:hover {
 #menuItemBar {
   visibility: hidden;
 }
+.menulist {
+  visibility: hidden;
+  width: 0;
+}
 .lead-contain {
   display: grid;
   clear: both;
@@ -506,13 +510,11 @@ ul {
   .myNavbar {
     width: 80%;
   }
-  .menulist {
-    visibility: hidden;
-  }
 }
 @media (max-width: 768px) {
   .menulist {
     visibility: visible;
+    width: 30px;
   }
   .myNavbar {
     margin-right: 2rem;
@@ -776,6 +778,7 @@ ul {
     visibility: visible;
   }
 }
+
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%); /* Start the header off-screen */

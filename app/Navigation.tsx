@@ -85,15 +85,15 @@ export default function Navigation() {
       >
         Contact
       </Button>
-      <Dropdown>
-        <MenuButton>
-          <Button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <Dropdown className="all-menu">
+        <MenuButton className="menulists">
+          <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <FontAwesomeIcon
               icon={isMenuOpen ? faTimes : faBars}
               color="black"
               id="menuItemBar"
             />
-          </Button>
+          </div>
         </MenuButton>
 
         {isMenuOpen && (

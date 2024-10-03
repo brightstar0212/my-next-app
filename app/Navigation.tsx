@@ -6,8 +6,11 @@ import { Menu } from "@mui/base/Menu";
 import { MenuItem } from "@mui/base/MenuItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 export default function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track menu open/close
+
   const scrollToSection = (id: string) => {
     const target = document.getElementById(id);
 
@@ -35,6 +38,7 @@ export default function Navigation() {
     };
 
     requestAnimationFrame(animateScroll); // Start animation
+    setIsMenuOpen(false);
   };
 
   return (
@@ -83,46 +87,60 @@ export default function Navigation() {
       </Button>
       <Dropdown>
         <MenuButton>
-          <FontAwesomeIcon icon={faBars} color="black" id="menuItemBar" />
+          <Button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <FontAwesomeIcon
+              icon={isMenuOpen ? faTimes : faBars}
+              color="black"
+              id="menuItemBar"
+            />
+          </Button>
         </MenuButton>
-        <Menu
-          slots={{ listbox: "ol" }}
-          style={{
-            background: "white",
-            zIndex: "100",
-            padding: "1rem",
-            color: "black",
-            borderRadius: "10px",
-            marginTop: "2rem",
-            left: "20px",
-          }}
-          className="menulist"
-        >
-          <MenuItem color="inherit" onClick={() => scrollToSection("about")}>
-            About
-          </MenuItem>
-          <MenuItem
-            color="inherit"
-            onClick={() => scrollToSection("experience")}
+
+        {isMenuOpen && (
+          <Menu
+            slots={{ listbox: "ol" }}
+            style={{
+              background: "white",
+              zIndex: "100",
+              padding: "1rem",
+              color: "black",
+              borderRadius: "10px",
+              marginTop: "2rem",
+            }}
+            className="menulist"
           >
-            Experience
-          </MenuItem>
-          <MenuItem color="inherit" onClick={() => scrollToSection("projects")}>
-            Projects
-          </MenuItem>
-          <MenuItem
-            color="inherit"
-            onClick={() => scrollToSection("achievements")}
-          >
-            Achievements
-          </MenuItem>
-          <MenuItem color="inherit" onClick={() => scrollToSection("skills")}>
-            Skills
-          </MenuItem>
-          <MenuItem color="inherit" onClick={() => scrollToSection("contact")}>
-            Contact
-          </MenuItem>
-        </Menu>
+            <MenuItem color="inherit" onClick={() => scrollToSection("about")}>
+              About
+            </MenuItem>
+            <MenuItem
+              color="inherit"
+              onClick={() => scrollToSection("experience")}
+            >
+              Experience
+            </MenuItem>
+            <MenuItem
+              color="inherit"
+              onClick={() => scrollToSection("projects")}
+            >
+              Projects
+            </MenuItem>
+            <MenuItem
+              color="inherit"
+              onClick={() => scrollToSection("achievements")}
+            >
+              Achievements
+            </MenuItem>
+            <MenuItem color="inherit" onClick={() => scrollToSection("skills")}>
+              Skills
+            </MenuItem>
+            <MenuItem
+              color="inherit"
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact
+            </MenuItem>
+          </Menu>
+        )}
       </Dropdown>
     </div>
   );

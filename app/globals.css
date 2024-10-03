@@ -50,9 +50,24 @@ header {
   width: 50%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+
 .nav-items button {
   font-family: Calibri Light;
   font-size: 18px;
+}
+.menulist {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+ol li {
+  text-align: center;
+  font-size: 1.4rem;
+}
+ol li:hover {
+  background-color: #e4e4ea;
+}
+.base-MenuItem-root:hover {
+  cursor: pointer;
 }
 #lead {
   position: relative;

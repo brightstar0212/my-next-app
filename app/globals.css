@@ -80,9 +80,8 @@ ol li:hover {
 #menuItemBar {
   visibility: hidden;
 }
-.menulist {
+.menulists {
   visibility: hidden;
-  width: 0;
 }
 .lead-contain {
   display: grid;
@@ -514,7 +513,6 @@ ul {
 @media (max-width: 768px) {
   .menulist {
     visibility: visible;
-    width: 30px;
   }
   .myNavbar {
     margin-right: 2rem;

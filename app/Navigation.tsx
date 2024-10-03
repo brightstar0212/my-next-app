@@ -38,7 +38,7 @@ export default function Navigation() {
   };
 
   return (
-    <>
+    <div className="nav-items">
       <Button
         color="inherit"
         onClick={() => scrollToSection("about")}
@@ -124,6 +124,6 @@ export default function Navigation() {
           </MenuItem>
         </Menu>
       </Dropdown>
-    </>
+    </div>
   );
 }

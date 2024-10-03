@@ -20,15 +20,11 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body>
-        <AppBar
-          position="fixed"
-          sx={{ backgroundColor: "#fff", color: "#000", padding: 0 }}
-          className="animate-fade-down myNavbar"
-        >
-          <Toolbar>
+        <header>
+          <nav className="animate-fade-down myNavbar">
             <Navigation />
-          </Toolbar>
-        </AppBar>
+          </nav>
+        </header>
 
         {children}
         <Footer />

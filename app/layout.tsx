@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import { CssBaseline } from "@mui/material";
 import "./globals.css"; // Import global styles
 
 interface LayoutProps {
@@ -19,12 +20,12 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body>
+        <CssBaseline /> {/* MUI CSS reset */}
         <header>
           <nav className="animate-fade-down myNavbar">
             <Navigation />
           </nav>
         </header>
-
         {children}
         <Footer />
       </body>

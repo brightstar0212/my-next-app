@@ -231,12 +231,12 @@ ul {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-.col-item {
-  border-radius: 5%;
-  background-color: #eee5e5f1;
-  display: grid;
-  margin-left: 1rem;
-  margin-right: 1rem;
+.row-projects .col-item {
+  border-radius: 5% !important;
+  background-color: #eee5e5f1 !important;
+  display: grid !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
 .col-item:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -344,10 +344,10 @@ ul {
 .goToTop {
   bottom: 3rem;
   right: 2rem;
-  position: fixed;
-  border-radius: 50%;
-  padding: 5px;
-  background-color: #656af0;
+  position: fixed !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+  background-color: #656af0 !important;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,

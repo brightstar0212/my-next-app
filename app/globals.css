@@ -342,8 +342,8 @@ ul {
   justify-content: center;
 }
 .goToTop {
-  bottom: 3rem;
-  right: 2rem;
+  bottom: 3rem !important;
+  right: 2rem !important;
   position: fixed !important;
   border-radius: 50% !important;
   padding: 5px !important;

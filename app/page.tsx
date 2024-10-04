@@ -791,6 +791,7 @@ export default function HomePage() {
                   paddingBottom: "20px",
                   paddingTop: "20px",
                   textAlign: "center",
+                  height: "110px",
                 }}
               >
                 {project.title}

@@ -422,22 +422,22 @@ iframe:focus {
 }
 @media (max-width: 1600px) {
   .block li {
-    width: 18%;
+    width: 18% !important;
   }
 }
 @media (max-width: 1300px) {
   .block li {
-    width: 26%;
+    width: 26% !important;
   }
 }
 @media (max-width: 950px) {
   .block li {
-    width: 34%;
+    width: 34% !important;
   }
 }
 @media (max-width: 768px) {
   .block li {
-    width: 33%;
+    width: 33% !important;
   }
   #lead-content h1 {
     font-size: 3rem;

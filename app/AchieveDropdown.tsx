@@ -84,9 +84,9 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
                       component="h3"
                       style={{
                         color: "#171717",
-                        fontSize: "1.1rem",
+                        fontSize: "1.2rem",
                         fontFamily: "Calibri",
-                        lineHeight: "0.9em",
+                        lineHeight: "1.4rem",
                         paddingBottom: "10px",
                         paddingLeft: "40px",
                         paddingRight: "40px",
@@ -122,7 +122,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
                       component="h3"
                       style={{
                         color: "#171717",
-                        fontSize: "1.2rem",
+                        fontSize: "1.3rem",
                         fontFamily: "Calibri",
                         lineHeight: "0.9em",
                         paddingBottom: "10px",

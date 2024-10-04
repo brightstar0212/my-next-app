@@ -659,7 +659,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "1.5rem",
+                fontSize: "1.3rem",
                 fontFamily: "Calibri Light",
                 lineHeight: "1em",
                 padding: "10px",
@@ -704,7 +704,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "1.5rem",
+                fontSize: "1.3rem",
                 fontFamily: "Calibri Light",
                 lineHeight: "1em",
                 padding: "10px",
@@ -751,7 +751,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "1.5rem",
+                fontSize: "1.3rem",
                 fontFamily: "Calibri Light",
                 lineHeight: "1em",
                 padding: "10px",

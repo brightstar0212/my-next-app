@@ -36,13 +36,16 @@ const LeadSection = () => {
                 color: "white",
                 marginTop: "4rem",
                 borderRadius: "15px",
-                padding: "15px",
                 backgroundImage: "#5151c6",
               }}
               className="resume"
             >
               <Link
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  padding: "10px",
+                }}
                 href="http://ronanmmurphy.github.io/ronan-murphy/RonanMurphy_Resume.pdf"
                 target="_blank"
               >

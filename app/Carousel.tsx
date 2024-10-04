@@ -116,12 +116,21 @@ export default function Carousel() {
             style={{ borderRadius: "50px" }} // Set width to 50% and center
             className="carousel-image"
           />
+
+          <Typography
+            style={{
+              padding: "10px",
+              textAlign: "center",
+            }}
+            className="carousel-caption"
+          >
+            {image.caption}
+          </Typography>
           {/* Circle Indicators */}
           <Box
             // key={i}
             sx={{
               position: "relative",
-              bottom: 60,
               left: "50%",
               transform: "translateX(-50%)",
               display: "flex",
@@ -130,6 +139,7 @@ export default function Carousel() {
               gap: 1,
               padding: "1rem",
             }}
+            className="indicator"
           >
             {images.map((dot, j) => (
               <Box
@@ -139,25 +149,17 @@ export default function Carousel() {
                   height: 12,
                   borderRadius: "50%",
                   backgroundColor:
-                    j === index ? "rgba(45, 45, 46, 0.76)" : "#fff",
+                    j === index ? "rgba(45, 45, 46, 0.76)" : "#bbb",
                   cursor: "default",
                   "&:hover": {
                     backgroundColor: "rgba(45, 45, 46, 0.9)",
+                    cursor: "pointer",
                   },
                 }}
                 onClick={() => setIndex(j)}
               />
             ))}
           </Box>
-          <Typography
-            style={{
-              padding: "10px",
-              fontSize: "1.3rem",
-            }}
-            className="carousel-caption"
-          >
-            {image.caption}
-          </Typography>
         </Box>
       ))}
 
@@ -175,6 +177,7 @@ export default function Carousel() {
             backgroundColor: "rgba(45, 45, 46, 0.86)", // Background color when clicked
           },
         }}
+        className="carousel-btn"
       >
         <FontAwesomeIcon
           icon={faChevronLeft}
@@ -195,6 +198,7 @@ export default function Carousel() {
             backgroundColor: "rgba(45, 45, 46, 0.86)", // Background color when clicked
           },
         }}
+        className="carousel-btn"
       >
         <FontAwesomeIcon
           icon={faChevronRight}

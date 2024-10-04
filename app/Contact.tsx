@@ -124,9 +124,9 @@ export default function Contact() {
         ></iframe>
       </div>
       {showGoToTop && (
-        <Button className="goToTop" onClick={scrollToTop}>
+        <button className="goToTop" onClick={scrollToTop}>
           <FontAwesomeIcon icon={faChevronUp} />
-        </Button>
+        </button>
       )}
     </>
   );

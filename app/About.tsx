@@ -18,9 +18,9 @@ const About = () => {
           fontFamily: "MV Boli",
           lineHeight: "0.9em",
           paddingBottom: "10px",
-          paddingLeft: "50px",
           textDecoration: "underline",
         }}
+        className="titleh1"
       >
         About Me
       </Typography>
@@ -32,7 +32,7 @@ const About = () => {
         </div>
 
         <div className="content-text">
-          <p style={{ paddingRight: "3rem", paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "1rem" }}>
             Hi There! I&#39;m Ronan, welcome to my website 😃 I&#39;m a
             fullstack software engineer specializing in Artificial Intelligence
             with 2+ years of experience. I am from Galway, Ireland 📍 Currently,

@@ -408,6 +408,7 @@ export default function HomePage() {
             textDecoration: "underline",
             textAlign: "center",
           }}
+          className="titleh1"
         >
           Experience
         </Typography>
@@ -622,7 +623,7 @@ export default function HomePage() {
             paddingBottom: "10px",
             textAlign: "center",
           }}
-          className="aos-init aos-animate"
+          className="aos-init aos-animate titleh1"
           data-aos="zoom-out-up"
         >
           Project Work
@@ -644,7 +645,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "2rem",
+                fontSize: "2.7rem",
                 fontFamily: "Calibri",
                 lineHeight: "0.9em",
                 paddingBottom: "10px",
@@ -658,7 +659,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "1rem",
+                fontSize: "1.5rem",
                 fontFamily: "Calibri Light",
                 lineHeight: "1em",
                 padding: "10px",
@@ -689,7 +690,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "2rem",
+                fontSize: "2.7rem",
                 fontFamily: "Calibri",
                 lineHeight: "0.9em",
                 paddingBottom: "10px",
@@ -703,7 +704,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "1rem",
+                fontSize: "1.5rem",
                 fontFamily: "Calibri Light",
                 lineHeight: "1em",
                 padding: "10px",
@@ -736,7 +737,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "2rem",
+                fontSize: "2.7rem",
                 fontFamily: "Calibri",
                 lineHeight: "0.9em",
                 paddingBottom: "10px",
@@ -750,7 +751,7 @@ export default function HomePage() {
               component="h3"
               style={{
                 color: "rgba(41, 40, 40, 0.911)",
-                fontSize: "1rem",
+                fontSize: "1.5rem",
                 fontFamily: "Calibri Light",
                 lineHeight: "1em",
                 padding: "10px",
@@ -901,10 +902,11 @@ export default function HomePage() {
             marginBottom: "5rem",
             textDecoration: "underline",
           }}
+          className="titleh1"
         >
           Achievements & Results
         </Typography>
-        <div className="space-y-4 grid achieveDrop">
+        <div className="space-y-4 achieveDrop">
           {dropdownData.map((dropdown, index) => (
             <Dropdown
               key={index}

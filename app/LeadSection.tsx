@@ -36,8 +36,8 @@ const LeadSection = () => {
                 color: "white",
                 marginTop: "4rem",
                 borderRadius: "15px",
-                padding: "10px",
-                backgroundImage: " linear-gradient(0deg, #888bf4, #5151c6);",
+                padding: "15px",
+                backgroundImage: "#5151c6",
               }}
               className="resume"
             >
@@ -46,7 +46,7 @@ const LeadSection = () => {
                 href="http://ronanmmurphy.github.io/ronan-murphy/RonanMurphy_Resume.pdf"
                 target="_blank"
               >
-                <Typography variant="body1">My Resume</Typography>
+                <h4 id="resume_btn">My Resume</h4>
               </Link>
             </Button>
           </Box>

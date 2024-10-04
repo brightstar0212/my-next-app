@@ -20,6 +20,7 @@ export default function Skill() {
           textAlign: "center",
           textDecoration: "underline",
         }}
+        className="titleh1"
       >
         Skills
       </Typography>

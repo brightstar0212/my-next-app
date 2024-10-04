@@ -27,25 +27,22 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
   };
 
   return (
-    <div className="relative mb-4" style={{ margin: "0px" }}>
+    <div className="relative">
       <button
         onClick={toggleCollapse}
         className="w-full flex justify-between items-center shadow-sm text-sm font-medium text-white "
-        style={{ padding: "1.3rem" }}
       >
         <Typography
           variant="h1"
           component="h1"
           style={{
-            fontWeight: "400",
-            fontSize: "2.5rem",
-            fontFamily: "Calibri",
             lineHeight: "0.9em",
 
             paddingLeft: "20px",
 
             display: "flex",
           }}
+          className="achieve-title"
         >
           {title}
         </Typography>

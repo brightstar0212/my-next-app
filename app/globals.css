@@ -18,9 +18,11 @@ body {
   color: var(--foreground);
   background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
   overflow-x: hidden;
 }
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -30,7 +32,7 @@ section {
   color: black;
 }
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -41,6 +43,9 @@ header {
   animation-timing-function: ease;
   animation-duration: 0.75s;
   padding-top: 20px;
+}
+#resume_btn {
+  font-size: 1.2rem;
 }
 .myNavbar {
   margin: auto;
@@ -69,6 +74,7 @@ ol li:hover {
 .base-MenuItem-root:hover {
   cursor: pointer;
 }
+
 #lead {
   position: relative;
   height: 100vh;
@@ -131,8 +137,8 @@ svg {
   height: 1.5rem;
   padding-right: 0.25rem;
 }
-.row {
-  padding-right: 2rem;
+#about h1 {
+  padding-left: 2rem;
 }
 .about-content {
   display: flex;
@@ -158,6 +164,14 @@ svg {
 .content-text {
   width: 50%;
   padding-top: 4rem;
+  padding-right: 3rem;
+}
+.achieve-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.achieveDrop {
+  width: 80%;
 }
 .column {
   width: 50%;
@@ -231,7 +245,9 @@ iframe:focus {
 }
 .row-projects {
   display: flex;
+  width: 80%;
   justify-content: space-around;
+  margin: auto;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
@@ -276,15 +292,21 @@ iframe:focus {
   margin: auto;
 }
 .achieveDrop {
-  width: 60%;
+  width: 80%;
   margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  justify-content: center;
 }
 .achieveDrop .relative {
+  width: 100%;
+}
+.achieveDrop .relative button {
   background-color: #5151c6;
+  border-radius: 10px;
+  padding: 1rem;
 }
 .achieveDrop .relative button:hover {
   background-color: #4141af;
+  border-radius: 10px;
 }
 #skills {
   background-color: #eee;
@@ -296,7 +318,7 @@ iframe:focus {
 }
 .block li {
   display: inline-block;
-  width: 22%;
+  width: 16%;
   margin-bottom: 2rem;
   padding-left: 1rem;
 }
@@ -336,8 +358,8 @@ iframe:focus {
 }
 .footer a {
   font-size: 4.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 .footer a:hover {
   color: #c2b3b3;
@@ -346,11 +368,12 @@ iframe:focus {
   justify-content: center;
 }
 .goToTop {
+  height: 60px !important;
+  width: 60px !important;
   bottom: 3rem !important;
   right: 2rem !important;
   position: fixed !important;
   border-radius: 50% !important;
-  padding: 5px !important;
   background-color: #656af0 !important;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
@@ -359,12 +382,13 @@ iframe:focus {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .goToTop svg {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   z-index: 100;
   margin: auto;
   color: #efeff1;
   padding: 0;
+  margin: 0;
 }
 .dropProLis {
   padding-left: 1rem;
@@ -377,8 +401,36 @@ iframe:focus {
   background-color: #e4e4ea;
   padding: 5px;
 }
-
+.footer-title {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  width: 20%;
+}
+@media (min-width: 1800px) {
+  .row-projects {
+    width: 70%;
+    height: 530px;
+  }
+}
+@media (max-width: 1600px) {
+  .block li {
+    width: 18%;
+  }
+}
+@media (max-width: 1300px) {
+  .block li {
+    width: 26%;
+  }
+}
+@media (max-width: 950px) {
+  .block li {
+    width: 34%;
+  }
+}
 @media (max-width: 768px) {
+  .block li {
+    width: 33%;
+  }
   #lead-content h1 {
     font-size: 3rem;
   }
@@ -515,6 +567,15 @@ iframe:focus {
   }
 }
 @media (max-width: 768px) {
+  .titleh1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+  .block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .menulist {
     visibility: visible !important;
   }
@@ -552,8 +613,8 @@ iframe:focus {
   }
   .content-text p {
     padding-top: 4rem;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
   .content-text {
     width: 100%;
@@ -565,11 +626,6 @@ iframe:focus {
 
   .about-text {
     padding-right: 1.5rem;
-  }
-
-  .column {
-    padding: 10px;
-    flex: 100%;
   }
 
   .column-title {
@@ -648,6 +704,39 @@ iframe:focus {
   }
 }
 @media (max-width: 480px) {
+  .achieveDrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .achieveDrop .relative button {
+    padding: 12px;
+  }
+  .achieveDrop .relative {
+    width: 90%;
+  }
+  .carousel-btn {
+    top: 110px;
+  }
+  .indicator {
+  }
+  .carousel-caption {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .achieveDrop {
+    width: 100%;
+  }
+  .achieve-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .titleh1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
   .about-title {
     font-size: 1.8rem;
     padding-left: 10px;
@@ -658,8 +747,9 @@ iframe:focus {
   }
   .content-text p {
     padding-top: 4rem;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: justify;
   }
   .about-text {
     padding-right: 1rem;
@@ -676,7 +766,13 @@ iframe:focus {
   }
 
   .column {
-    padding: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+  .column p {
+    padding: 0.5rem;
+    text-align: justify;
   }
   .carousel-caption {
     width: 100%;
@@ -778,6 +874,11 @@ iframe:focus {
   }
   #menuItemBar {
     visibility: visible;
+  }
+  .footer-title {
+    width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 }
 

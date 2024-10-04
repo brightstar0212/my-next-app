@@ -23,7 +23,8 @@ export default function Footer() {
       </div>
       <div>
         <Typography
-          style={{ width: "15%", textAlign: "center", margin: "auto" }}
+          style={{ textAlign: "center", margin: "auto" }}
+          className="footer-title"
         >
           © Ronan Murphy 2021 All Rights Reserved
         </Typography>

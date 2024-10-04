@@ -175,8 +175,8 @@ svg {
   padding-right: 3rem;
 }
 .achieve-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
 }
 .achieveDrop {
   width: 80%;

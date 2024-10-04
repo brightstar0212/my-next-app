@@ -112,7 +112,14 @@ export default function Contact() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76329.91282327415!2d-9.131146795980367!3d53.28398573503283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b93955a2d5bff%3A0x32b1b440a495281!2sGalway%2C%20Ireland!5e0!3m2!1sen!2s!4v1727214061128!5m2!1sen!2s"
           width="90%"
           height="400"
-          style={{ borderRadius: "15px", margin: "auto" }}
+          style={{
+            borderRadius: "15px",
+            margin: "auto",
+            borderColor: "#fff",
+            border: "0",
+            outline: "none",
+          }}
+          frameBorder="0"
           loading="lazy"
         ></iframe>
       </div>

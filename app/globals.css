@@ -195,6 +195,10 @@ li {
 ul {
   padding-top: 3rem;
 }
+iframe:focus {
+  outline: none;
+  border: none;
+}
 .timeline-line {
   position: absolute;
   width: 4px; /* Width of the middle line */

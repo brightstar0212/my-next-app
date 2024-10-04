@@ -725,7 +725,7 @@ iframe:focus {
     width: 90%;
   }
   .carousel-btn {
-    top: 110px;
+    top: 110px !important;
   }
   .indicator {
   }

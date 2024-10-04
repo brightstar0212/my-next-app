@@ -770,7 +770,17 @@ export default function HomePage() {
       {activeDropdown === "ai" && ( // Render dropdown content conditionally
         <section id="project" className="project">
           {Aiproject.map((project, index) => (
-            <div key={index} data-aos="fade-up" className="project-item">
+            <div
+              key={index}
+              data-aos="fade-up"
+              className="project-item"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
               <Typography
                 variant="h1"
                 component="h1"
@@ -789,7 +799,7 @@ export default function HomePage() {
                 <Image
                   src={project.imagesrc}
                   alt={project.title}
-                  width={400}
+                  width={450}
                   height={300}
                   style={{ margin: "auto" }}
                   className="hover:opacity-50 hover: cursor-pointer"

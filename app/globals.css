@@ -266,10 +266,6 @@ iframe:focus {
 .project-item {
   width: 38%;
   margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .project-item img {
   border-radius: 5%;
